@@ -370,3 +370,30 @@
 	}
 	
 })(jQuery);
+
+
+
+
+// appointment
+        // document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+            
+        //     // Show success message
+        //     const successMsg = document.getElementById('successMessage');
+        //     successMsg.style.display = 'block';
+            
+        //     // Scroll to top
+        //     window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+        //     // Reset form after 2 seconds
+        //     setTimeout(() => {
+        //         this.reset();
+        //         successMsg.style.display = 'none';
+        //     }, 3000);
+        // });
+
+        // // Set minimum date to today
+        // const dateInput = document.querySelector('input[type="date"]');
+        // const today = new Date().toISOString().split('T')[0];
+        // dateInput.setAttribute('min', today);
+   

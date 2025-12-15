@@ -181,86 +181,125 @@
                         <!-- Service Categories List End -->
 
                         <!-- Sidebar Cta Box Start -->
-                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="wow fadeInUp" data-wow-delay="0.25s">
 
-                       <section class="appointment-section">
-                            <div class="form-wrapper">
+                            <div class="appointment-wrapper">
+                                    <div class="appointment-card">
+                                        <div class="form-header">
+                                            <div class="form-header-content">
+                                                <h2 class="form-title">Book Your Appointment</h2>
+                                            </div>
+                                        </div>
 
-                                <form class="wpcf7-form" method="post" novalidate="novalidate">
+                                        <div class="form-body">
+                                            <div class="success-message" id="successMessage">
+                                                <i class="fas fa-check-circle"></i> Your appointment request has been submitted successfully!
+                                            </div>
 
-                                    <div class="form_icon">
-                                        <p><img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/05/Favicon-White.png" alt=""></p>
-                                        <h4 class="contactname">Contact With Us</h4>
+                                            <form id="appointmentForm">
+                                                <div class="form-group-custom">
+                                                    <label class="form-label-custom">
+                                                        <i class="fas fa-user"></i>
+                                                        Full Name
+                                                    </label>
+                                                    <input type="text" 
+                                                        class="form-control-custom" 
+                                                        name="name" 
+                                                        placeholder="Enter your full name" 
+                                                        required>
+                                                </div>
+
+                                                <div class="row-custom">
+                                                    <div class="col-custom">
+                                                        <div class="form-group-custom">
+                                                            <label class="form-label-custom">
+                                                                <i class="fas fa-envelope"></i>
+                                                                Email Address
+                                                            </label>
+                                                            <input type="email" 
+                                                                class="form-control-custom" 
+                                                                name="email" 
+                                                                placeholder="your.email@example.com" 
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-custom">
+                                                        <div class="form-group-custom">
+                                                            <label class="form-label-custom">
+                                                                <i class="fas fa-phone"></i>
+                                                                Phone Number
+                                                            </label>
+                                                            <input type="tel" 
+                                                                class="form-control-custom" 
+                                                                name="phone" 
+                                                                placeholder="+1 (555) 000-0000" 
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-custom">
+                                                    <label class="form-label-custom">
+                                                        <i class="fas fa-clipboard-list"></i>
+                                                        Reason for Visit
+                                                    </label>
+                                                    <select class="form-select-custom" name="reason" required>
+                                                        <option value="">Select a reason for your visit</option>
+                                                        <option value="Exam & Cleaning">Exam & Cleaning</option>
+                                                        <option value="Consultation">Consultation</option>
+                                                        <option value="Treatment">Treatment</option>
+                                                        <option value="Urgent Dental Care">Urgent Dental Care</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="row-custom">
+                                                    <div class="col-custom">
+                                                        <div class="form-group-custom">
+                                                            <label class="form-label-custom">
+                                                                <i class="fas fa-calendar-alt"></i>
+                                                                Preferred Date
+                                                            </label>
+                                                            <input type="date" 
+                                                                class="form-control-custom" 
+                                                                name="date" 
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-custom">
+                                                        <div class="form-group-custom">
+                                                            <label class="form-label-custom">
+                                                                <i class="fas fa-clock"></i>
+                                                                Preferred Time
+                                                            </label>
+                                                            <select class="form-select-custom" name="time" required>
+                                                                <option value="">Select a time slot</option>
+                                                                <option value="09:00 AM - 12:00 PM">09:00 AM - 12:00 PM</option>
+                                                                <option value="12:00 PM - 05:00 PM">12:00 PM - 05:00 PM</option>
+                                                                <option value="05:00 PM - 08:00 PM">05:00 PM - 08:00 PM</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-custom">
+                                                    <label class="form-label-custom">
+                                                        <i class="fas fa-comment-dots"></i>
+                                                        Additional Message
+                                                    </label>
+                                                    <textarea class="form-control-custom" 
+                                                            name="message" 
+                                                            placeholder="Tell us more about your dental concerns or any special requirements..."
+                                                            required></textarea>
+                                                </div>
+
+                                                <button type="submit" class="submit-btn-custom">
+                                                    <i class="fas fa-paper-plane"></i> Book Appointment
+                                                </button>
+                                            </form>
+                                        </div>
                                     </div>
-
-                                    <!-- Name -->
-                                    <p>
-                                        <label class="dev_label">Name</label>
-                                        <input type="text" name="Yourfirstname" placeholder="Your Name" required>
-                                    </p>
-
-                                    <!-- Email -->
-                                    <p>
-                                        <label class="dev_label">Email Address</label>
-                                        <input type="email" name="youremail" placeholder="Your email address" required>
-                                    </p>
-
-                                    <!-- Phone -->
-                                    <p>
-                                        <label class="dev_label">Phone Number</label>
-                                        <input type="tel" name="yourphone" placeholder="Your phone number" required>
-                                        
-                                    </p>
-
-                                    <!-- Reason -->
-                                    <p>
-                                        <label class="dev_label">Reason for Enquiry</label>
-                                        <select name="PreferredClinic" required>
-                                            <option value="">Reason for Your Visit</option>
-                                            <option value="Exam & Cleaning">Exam & Cleaning</option>
-                                            <option value="Consultation">Consultation</option>
-                                            <option value="Treatment">Treatment</option>
-                                            <option value="Urgent Dental Care">Urgent Dental Care</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </p>
-
-                                    <!-- Date -->
-                                    <p>
-                                        <label class="dev_label">Preferred Date</label>
-                                        <input type="date" name="appointmentdate" required>
-                                        
-                                    </p>
-
-                                    <!-- Time -->
-                                    <p>
-                                        <label class="dev_label">Preferred Time</label>
-                                        <select name="Preferredtime" required>
-                                            <option value="">Any time</option>
-                                            <option value="09:00 AM - 12:00 PM">09:00 AM - 12:00 PM</option>
-                                            <option value="12:00 PM - 05:00 PM">12:00 PM - 05:00 PM</option>
-                                            <option value="05:00 PM - 08:00 PM">05:00 PM - 08:00 PM</option>
-                                        </select>
-                                        
-                                    </p>
-
-                                    <!-- Message -->
-                                    <p>
-                                        <label class="dev_label">Message</label>
-                                        <textarea name="Yourmessagehere" rows="5" placeholder="Your message here" required></textarea>
-                                        
-                                    </p>
-
-                                    <!-- Submit -->
-                                    <p>
-                                        <input type="submit" value="Submit" class="submit-btn">
-                                    </p>
-
-                                </form>
-
                             </div>
-                        </section>
-
 
                         </div>
                         <!-- Sidebar Cta Box End -->
