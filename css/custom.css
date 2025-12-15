@@ -1134,10 +1134,15 @@ header.main-header .header-sticky.active{
 	margin-bottom: 10px;
 }
 
+.cta-box-content p a{
+	color: var(--white-color);
+	margin: 0;
+}
 .cta-box-content p{
 	color: var(--white-color);
 	margin: 0;
 }
+
 
 .cta-box-btn{
 	text-align: right;
@@ -4048,7 +4053,7 @@ footer.main-footer{
 	}
 
 	.about-us{
-		padding: 50px 0;
+		padding: 50px 0px 0px 0px;
 	}
 
 	.about-image{
@@ -4170,7 +4175,7 @@ footer.main-footer{
 	}
 
 	.our-team{
-		padding: 50px 0 20px;
+		padding: 0px 0 20px;
 		background-size: 100% auto;
 	}
 
@@ -4751,7 +4756,7 @@ footer.main-footer{
     }
 
 	.section-title{
-		margin-bottom: 20px;
+		margin: 30px 0;
 	}
 
 	.section-title h1{
@@ -5670,6 +5675,9 @@ footer.main-footer{
         }
 
 		/* logos */
+		.payment-options{
+			padding: 100px 0;
+		}
 		.payment-logos-section {
             padding: 0px 0px 80px 0;
             background-color: #ffffff;
@@ -5717,6 +5725,9 @@ footer.main-footer{
 			.schedule{
 			text-align: left!important;
 			}
+			.payment-options{
+			padding: 50px 0;
+		}
 			
 		}
 
