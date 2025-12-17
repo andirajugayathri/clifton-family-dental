@@ -48,7 +48,7 @@
 	--accent-color			: #3a3a3a;
 	--white-color			: #FFFFFF;
 	--divider-color			: #FFFFFF1F;
-	--dark-divider-color	: #0E384C1A;
+	--dark-divider-color	: #FFFFFF1F;
 	--error-color			: rgb(230, 87, 87);
 	--default-font			: "Poppins", sans-serif;
 }
@@ -203,7 +203,9 @@ body{
 	overflow: hidden;
 	z-index: 1;
 }
-
+.btn-sept{
+	background: var(--primary-color);
+}
 .btn-default:hover{
 	background-color: transparent;
 }
@@ -680,11 +682,31 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .hero{
-	background: var(--secondary-color) url('../images/hero-bg.svg') no-repeat;
+	background: var(--secondary-color) url('../images/home-banner.webp') no-repeat;
 	background-position: center center;
-	background-size: auto;
+	background-size:cover;
+	background-repeat: no-repeat;
 	padding: 50px 0 0;
+	height: 600px;
 }
+.hero {
+    position: relative;
+    padding: 50px 0 0;
+    background: url('../images/home-banner.webp') center/cover no-repeat;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  background: rgba(58, 58, 58, 0.5); /* #3a3a3a */
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
 
 .hero-content{
 	padding-right: 100px;
@@ -1403,7 +1425,7 @@ header.main-header .header-sticky.active{
 
 .visit-clinic{
 	position: relative;
-	background: url('../images/visit-clinic-bg.jpg') no-repeat;
+	background: url('../images/clinic-visit.jpeg') no-repeat;
 	background-position: center center;
 	background-size: auto;
 	border-radius: 40px;
@@ -1417,9 +1439,10 @@ header.main-header .header-sticky.active{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: var(--primary-color);
+	/* background-color: var(--primary-color); */
+	background: rgba(58, 58, 58, 0.5);
 	border-radius: 40px;
-	opacity: 60%;
+	/* opacity: 60%; */
 	width: 100%;
 	height: 100%;
 }
@@ -2115,6 +2138,7 @@ text-align: center;
 
 .contact-now{
 	padding: 100px 0;
+	
 }
 
 .contact-google-map .google-map-iframe,
@@ -2171,7 +2195,7 @@ text-align: center;
 /************************************/
 
 footer.main-footer{
-	padding: 100px 0 0;
+	padding: 50px 0 0;
 	/* background: var(--primary-color) url('../images/footer-bg.svg') no-repeat; */
 	background-color: var(--secondary-color);
 	background-position: center center;
@@ -2229,11 +2253,17 @@ footer.main-footer{
 	margin-left: 50px;
 }
 
+
+.footer-social-icons a i {
+    color: var(--primary-color); 
+	font-size: 25px!important;
+}
+
+
 .footer-copyright{
 	border-top: 1px solid #3a3a3a;
 	padding: 30px 0;
 	text-align: center;
-	margin-top: 60px;
 }
 
 .footer-copyright-text p{
@@ -2449,7 +2479,7 @@ footer.main-footer{
 
 .expertise-experience-img img{
 	width: 100%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1/0.9;
 	object-fit: cover;
 	border-radius: 40px;
 }
@@ -5309,11 +5339,15 @@ footer.main-footer{
  }
  
 .main-menu ul li.submenu:first-child ul, .main-menu ul li.submenu:last-child ul, .main-menu ul li.submenu:nth-last-of-type(2) ul {
-	background-color: var(--accent-color);;
+	background-color: var(--accent-color);
   }
-  .main-menu ul ul li.submenu a:hover,
+  .main-menu ul ul li.submenu > ul.sub-menu li a:hover {
+    color: #fff;
+}
+
+.main-menu ul ul li.submenu a:hover,
 .main-menu ul ul li.submenu a:focus{
-	color: #EFF8FF;
+	color: #3a3a3a;
 	background-color: transparent;
 	padding: 8px 20px 8px 23px !important;
 }
@@ -5862,6 +5896,10 @@ footer.main-footer{
             .col-custom {
                 min-width: 100%;
             }
+			.nav-emergency a{
+			 padding: 10px 20px!important;
+			 margin: 0!important;
+		    }
         }
 
         .success-message {
@@ -5873,5 +5911,21 @@ footer.main-footer{
             margin-bottom: 20px;
             border: 1px solid #c3e6cb;
         }
+		.herotxt h1{
+			color: #fff;
+		}
+		.herotxt span{
+			color: #ec7223!important;
+		}
+		.herotxt p{
+			color: #ffff;
+		}
+
+		.hero {
+			position: relative;
+			/* height: 600px; */
+			padding: 100px 0 0;
+		}
+		
 
 		
