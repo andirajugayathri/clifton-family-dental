@@ -44,21 +44,31 @@
             <div class="loading"></div>
             <div id="loading-icon">
                 <div class="loader-wrapper">
-                    <img
-                        src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/favicon-150x150.png"
-                        alt="Loading"
-                        class="loader-image">
+                    <img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/favicon-150x150.png"
+                        alt="Loading" class="loader-image">
                 </div>
             </div>
         </div>
     </div>
     <!-- Preloader End -->
 
-    <div id="navbar"></div> 
+    <div id="navbar"></div>
 
     <!-- Hero Section Start -->
     <div class="hero">
+        <!-- Hero Background Video -->
+        <video id="heroVideo" autoplay muted loop playsinline class="hero-bg-video">
+            <source src="images/Clifton Banner.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Sound Toggle Button -->
+        <button id="heroSoundToggle" class="hero-sound-toggle" aria-label="Unmute Video">
+            <i class="fa-solid fa-volume-xmark"></i>
+        </button>
+
         <div class="container">
+
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <!-- Hero Content Start -->
@@ -75,11 +85,12 @@
                         <!-- Hero Content Body Start -->
                         <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
                             <!--  <a href="https://www.centaurportal.com/d4w/org-877/extended_search?location=1031&randomNumber=ebfa13303849ec9f5a9f5d5aa6e5026769967cec39a2abd6cd68df607cd58989&shortVer=false&sourceID=null" class="btn-default btn-highlighted">Book Online</a> -->
-                             <!-- Button is already below, just cleaning up the text block above -->
+                            <!-- Button is already below, just cleaning up the text block above -->
                         </div>
                         <!-- Hero Content Body End -->
                         <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="https://www.centaurportal.com/d4w/org-877/extended_search?location=1031&randomNumber=ebfa13303849ec9f5a9f5d5aa6e5026769967cec39a2abd6cd68df607cd58989&shortVer=false&sourceID=null" class="btn-default btn-highlighted btn-sept">Book Online</a>
+                            <a href="https://www.centaurportal.com/d4w/org-877/extended_search?location=1031&randomNumber=ebfa13303849ec9f5a9f5d5aa6e5026769967cec39a2abd6cd68df607cd58989&shortVer=false&sourceID=null"
+                                class="btn-default btn-highlighted btn-sept">Book Online</a>
                         </div>
                         <!-- Hero Content Body End -->
 
@@ -107,31 +118,11 @@
                 <div class="col-lg-6">
                     <!-- Hero Image Start -->
                     <div class="hero-image">
-                        <!-- Hero Img Start -->
-                        <!-- <div class="hero-img">
-                            <figure>
-                                <img src="images/hero-img.png" alt="">
-                            </figure>
-                        </div> -->
-                        <!-- Hero Img End -->
-
-                        <!-- Hero Image Tag Start -->
-                        <div class="export-dantist-box" style="display:none;">
-                            <div class="icon-box">
-                                <figure class="image-anime">
-                                    <img src="images/dantist-doctor-img.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="export-dantist-content">
-                                <h3>dr. clara Lee</h3>
-                                <p>dantist</p>
-                            </div>
-                        </div>
-                        <!-- Hero Image Tag End -->
-
+                        <!-- Original Hero Img was here, now empty as video is background -->
                     </div>
                     <!-- Hero Image End -->
                 </div>
+
             </div>
         </div>
     </div>
@@ -172,7 +163,8 @@
                 <div class="col-lg-4 col-md-12 col-12">
                     <!-- Cta Box Btn Start -->
                     <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.5s">
-                        <a href="https://www.centaurportal.com/d4w/org-877/extended_search?location=1031&randomNumber=ebfa13303849ec9f5a9f5d5aa6e5026769967cec39a2abd6cd68df607cd58989&shortVer=false&sourceID=null" class="btn-default btn-highlighted">Book Online</a>
+                        <a href="https://www.centaurportal.com/d4w/org-877/extended_search?location=1031&randomNumber=ebfa13303849ec9f5a9f5d5aa6e5026769967cec39a2abd6cd68df607cd58989&shortVer=false&sourceID=null"
+                            class="btn-default btn-highlighted">Book Online</a>
                     </div>
                     <!-- Cta Box Btn End -->
                 </div>
@@ -183,53 +175,63 @@
 
 
     <div class="expertise-experience mt-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Expertise Experience Image Start -->
-                        <div class="expertise-experience-img">
-                            <figure class="image-anime reveal" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-                                <img src="images/quick-appoinment2.jpg" alt="" style="transform: translate(0px, 0px);">
-                            </figure>
-                        </div>
-                        <!-- Expertise Experience Image End -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Expertise Experience Image Start -->
+                    <div class="expertise-experience-img">
+                        <figure class="image-anime reveal"
+                            style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+                            <img src="images/quick-appoinment2.jpg" alt="" style="transform: translate(0px, 0px);">
+                        </figure>
                     </div>
-
-                    <div class="col-lg-6">
-                        <!-- Expertise Experience Content Start -->
-                        <div class="expertise-experience-content">
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Northern Beaches & Nearby Dental Care</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">
-                                <span>Quick Appointment Times </span> at Your Convenience
-                                </h2>                       
-                                <p class="wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">Clifton Family Dental offers quick, and after hours appointments. We also provide sympathetic and reassuring emergency dentistry.</p>
-                                
-                                <p class="wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">We offer comprehensive services from all fields of dentistry, including dental checkups, oral health consultations and necessary dental treatments. All of our services are provided in a comfortable, luxurious environment, using high-end dental equipment.</p>
-
-
-                            </div>
-                            <!-- Section Title End -->
-
-                            <!-- Expertise Experience Body Start -->
-                            <div class="expertise-experience-body wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                                <ul>
-                                    <li>Local dental clinic</li>
-                                    <li>Serving Clifton Beach</li>
-                                    <li>Nearby suburbs covered</li>
-                                    <li>Palm Cove to Yorkeys Knob</li>
-                                </ul>
-                            </div>
-                            <!-- Expertise Experience Body Body End -->
-                        </div>
-                        <!-- Expertise Experience Content End -->
-                    </div>
-
-                    
+                    <!-- Expertise Experience Image End -->
                 </div>
+
+                <div class="col-lg-6">
+                    <!-- Expertise Experience Content Start -->
+                    <div class="expertise-experience-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Northern
+                                Beaches & Nearby Dental Care</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">
+                                <span>Quick Appointment Times </span> at Your Convenience
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s"
+                                style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">Clifton
+                                Family Dental offers quick, and after hours appointments. We also provide sympathetic
+                                and reassuring emergency dentistry.</p>
+
+                            <p class="wow fadeInUp" data-wow-delay="0.25s"
+                                style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">We offer
+                                comprehensive services from all fields of dentistry, including dental checkups, oral
+                                health consultations and necessary dental treatments. All of our services are provided
+                                in a comfortable, luxurious environment, using high-end dental equipment.</p>
+
+
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Expertise Experience Body Start -->
+                        <div class="expertise-experience-body wow fadeInUp" data-wow-delay="0.5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                            <ul>
+                                <li>Local dental clinic</li>
+                                <li>Serving Clifton Beach</li>
+                                <li>Nearby suburbs covered</li>
+                                <li>Palm Cove to Yorkeys Knob</li>
+                            </ul>
+                        </div>
+                        <!-- Expertise Experience Body Body End -->
+                    </div>
+                    <!-- Expertise Experience Content End -->
+                </div>
+
+
             </div>
         </div>
+    </div>
     <!-- Intro Section End -->
 
     <!-- Our Serviceds Section Start -->
@@ -351,7 +353,7 @@
                                         All Ages</h2>
                                 </div>
                                 <!-- Section Title End -->
-                                 
+
 
                                 <!-- Visit Clinic Btn Start -->
                                 <div class="visit-clinic-btn wow fadeInUp" data-wow-delay="0.25s"
@@ -493,7 +495,8 @@
 
                         <!-- About Us Footer Start -->
                         <div class="about-us-footer wow fadeInUp" data-wow-delay="0.75s">
-                            <a href="https://www.centaurportal.com/d4w/org-877/extended_search?location=1031&randomNumber=ebfa13303849ec9f5a9f5d5aa6e5026769967cec39a2abd6cd68df607cd58989&shortVer=false&sourceID=null" class="btn-default">Book Now</a>
+                            <a href="https://www.centaurportal.com/d4w/org-877/extended_search?location=1031&randomNumber=ebfa13303849ec9f5a9f5d5aa6e5026769967cec39a2abd6cd68df607cd58989&shortVer=false&sourceID=null"
+                                class="btn-default">Book Now</a>
                         </div>
                         <!-- About Us Footer End -->
                     </div>
@@ -530,7 +533,7 @@
     </div>
     <!-- About Us Section End -->
 
-    
+
 
     <!-- Why Choose Us Section Start -->
     <div class="why-choose-us">
@@ -542,10 +545,17 @@
                         <h3 class="wow fadeInUp">Our Promise to You</h3>
                         <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Why Choose</span> Clifton Family
                             Dental</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.25s">With 25 years of combined experience, high end equipment, and advanced sterilisation facilities, you can take comfort in knowing you’re in safe hands. At Clifton Family Dental, we pride ourselves on providing high quality dental care in an empathetic, caring and inviting environment.</p>
-                        <p class="wow fadeInUp" data-wow-delay="0.25s">We want to do everything possible to make sure each patient has a positive dental experience, including listening to any worries you have, as well as talking you through the procedures before they happen to give you a clear understanding and make sure you feel confident about getting into the dentist chair. We have a comfortable office, with complimentary wi-fi in the waiting area, so you can feel at home.
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">With 25 years of combined experience, high end
+                            equipment, and advanced sterilisation facilities, you can take comfort in knowing you’re in
+                            safe hands. At Clifton Family Dental, we pride ourselves on providing high quality dental
+                            care in an empathetic, caring and inviting environment.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">We want to do everything possible to make sure
+                            each patient has a positive dental experience, including listening to any worries you have,
+                            as well as talking you through the procedures before they happen to give you a clear
+                            understanding and make sure you feel confident about getting into the dentist chair. We have
+                            a comfortable office, with complimentary wi-fi in the waiting area, so you can feel at home.
 
-</p>
+                        </p>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -640,7 +650,7 @@
                         <!-- Why Choose Item End -->
 
                         <!-- Why Choose Item Start -->
-                         <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
                             <!-- Icon Box Start -->
                             <div class="icon-box">
                                 <img src="images/icons/why-choose-5.png" alt="">
@@ -654,7 +664,7 @@
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
-                        
+
                         <!-- Why Choose Item End -->
 
                         <!-- Why Choose Item Start -->
@@ -710,7 +720,8 @@
                 <div class="col-12">
                     <!-- Assuming a grid of images here. I will put placeholders or text if images clearly missing. 
                           I will try to use a generic structure the user can fill or I can map if I find files. -->
-                    <p><i>Talk to one of our friendly staff members today to find out about eligibility, and which payment plan would suit your needs the best.</i></p>
+                    <p><i>Talk to one of our friendly staff members today to find out about eligibility, and which
+                            payment plan would suit your needs the best.</i></p>
                 </div>
             </div>
             <section class="payment-logos-section mt-4">
@@ -737,7 +748,7 @@
                 </div>
             </section>
         </div>
-         <!-- Insurance Company Logo Slider Start -->
+        <!-- Insurance Company Logo Slider Start -->
         <div class="insurance-company-carousel">
             <div class="container">
                 <div class="row align-items-center">
@@ -775,30 +786,33 @@
                                         </div>
                                     </div>
                                     <!-- company Logo End -->
-                                    
+
                                     <!-- company Logo Start -->
                                     <div class="swiper-slide">
                                         <div class="company-logo">
-                                            <img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/HICAPS.png" alt="logo">
+                                            <img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/HICAPS.png"
+                                                alt="logo">
                                         </div>
                                     </div>
                                     <!-- company Logo End -->
-                                    
+
                                     <!-- company Logo Start -->
                                     <div class="swiper-slide">
                                         <div class="company-logo">
-                                            <img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/image_2022_04_27T08_11_48_275Z-300x165.png" alt="logo">
+                                            <img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/image_2022_04_27T08_11_48_275Z-300x165.png"
+                                                alt="logo">
                                         </div>
                                     </div>
                                     <!-- company Logo End -->
-                                    
+
                                     <!-- company Logo Start -->
                                     <div class="swiper-slide">
                                         <div class="company-logo">
-                                            <img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/Afterpay-768x159.png" alt="logo">
+                                            <img src="https://cliftonfamilydental.com.au/wp-content/uploads/2022/04/Afterpay-768x159.png"
+                                                alt="logo">
                                         </div>
                                     </div>
-                                    <!-- company Logo End -->                             
+                                    <!-- company Logo End -->
                                 </div>
                             </div>
                         </div>
@@ -807,12 +821,12 @@
                 </div>
             </div>
         </div>
-    <!-- Insurance Company Logo Slider End -->
+        <!-- Insurance Company Logo Slider End -->
     </div>
     <!-- Payment Options Section End -->
 
 
-    <div id="footer"></div> 
+    <div id="footer"></div>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -844,7 +858,34 @@
     <!-- Wow js file -->
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
+    <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+    <!-- Hero Video Sound Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('heroVideo');
+            const toggleBtn = document.getElementById('heroSoundToggle');
+
+            if (video && toggleBtn) {
+                const icon = toggleBtn.querySelector('i');
+                toggleBtn.addEventListener('click', function () {
+                    if (video.muted) {
+                        video.muted = false;
+                        icon.classList.remove('fa-volume-xmark');
+                        icon.classList.add('fa-volume-high');
+                        toggleBtn.setAttribute('aria-label', 'Mute Video');
+                    } else {
+                        video.muted = true;
+                        icon.classList.remove('fa-volume-high');
+                        icon.classList.add('fa-volume-xmark');
+                        toggleBtn.setAttribute('aria-label', 'Unmute Video');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
+
 
 </html>
