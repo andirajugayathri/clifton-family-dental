@@ -48,9 +48,10 @@
 	--accent-color: #3a3a3a;
 	--white-color: #FFFFFF;
 	--divider-color: #FFFFFF1F;
-	--dark-divider-color: #FFFFFF1F;
+	--dark-divider-color	: #0E384C1A;
 	--error-color: rgb(230, 87, 87);
 	--default-font: "Poppins", sans-serif;
+	
 }
 
 /************************************/
@@ -717,7 +718,7 @@ header.main-header .header-sticky.active {
 }
 
 .hero-content-body {
-	border-bottom: 1px solid var(--dark-divider-color);
+	border-bottom: 1px solid var(--divider-color);
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
