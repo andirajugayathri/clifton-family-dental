@@ -1265,6 +1265,9 @@ header.main-header .header-sticky.active {
 .about-us {
 	padding: 100px 0px 0px 0px;
 }
+.aboutus-home {
+	padding: 100px 0px 50px 0px;
+}
 
 .about-image {
 	background: url('../images/about-bg-image.svg') no-repeat;
@@ -1644,6 +1647,7 @@ header.main-header .header-sticky.active {
 	font-size: 20px;
 	font-weight: 600;
 	text-transform: capitalize;
+	color: var(--accent-color)!important;
 }
 
 .counter-content p {
@@ -4977,6 +4981,8 @@ footer.main-footer {
 
 	.about-img-1 {
 		width: 100%;
+		padding-top: 30px;
+
 	}
 
 	.about-img-2 {
