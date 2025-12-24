@@ -6089,3 +6089,10 @@ textarea.form-control-custom {
 	/* height: 600px; */
 	padding: 100px 0 0;
 }
+
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #666;
+}
