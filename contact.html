@@ -263,7 +263,7 @@
 
                                 <!-- Appointment Date -->
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="date" name="appointment" class="form-control" placeholder="dd-mm-yyyy" required>
+                                    <input type="text" name="appointment" class="form-control" placeholder="dd-mm-yyyy" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
