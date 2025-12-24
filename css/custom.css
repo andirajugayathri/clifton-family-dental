@@ -6089,4 +6089,18 @@ textarea.form-control-custom {
 	/* height: 600px; */
 	padding: 100px 0 0;
 }
+.date-field {
+    position: relative;
+}
 
+.date-field #fakeDate {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.date-field #realDate {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
