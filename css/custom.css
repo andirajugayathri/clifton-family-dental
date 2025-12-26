@@ -4481,7 +4481,7 @@ footer.main-footer {
 	}
 
 	.page-header {
-		background-size: contain;
+		background-size: cover;
 		padding: 50px 0;
 	}
 
