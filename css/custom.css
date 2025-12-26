@@ -5914,6 +5914,29 @@ select {
 	filter: grayscale(0%);
 }
 
+@media (max-width: 575px) {
+	.insurance-logos-carousel .logo-item {
+		height: 80px;
+		padding: 10px;
+		margin: 5px;
+	}
+
+	.insurance-logos-carousel .logo-item img {
+		max-height: 40px;
+	}
+}
+
+@media (max-width: 374px) {
+	.insurance-logos-carousel .logo-item {
+		height: 70px;
+		padding: 8px;
+	}
+
+	.insurance-logos-carousel .logo-item img {
+		max-height: 35px;
+	}
+}
+
 /* Payment Plans Static Section */
 .payment-plans-static {
 	padding: 40px 0;
@@ -6164,6 +6187,51 @@ textarea.form-control-custom {
 	.nav-emergency a {
 		padding: 10px 20px !important;
 		margin: 0 !important;
+	}
+}
+
+/* Consultation Buttons Responsiveness */
+@media (max-width: 991px) {
+	.contact-now {
+		padding: 50px 0 !important;
+	}
+
+	.contact-now .section-title {
+		margin-bottom: 30px;
+	}
+
+	.schedule .btn-default {
+		min-width: 160px;
+		font-size: 13px;
+		padding: 12px 45px 12px 15px;
+		text-align: center;
+	}
+
+	.schedule {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.schedule .btn-default {
+		min-width: 140px;
+		font-size: 11px;
+		padding: 10px 35px 10px 12px;
+	}
+}
+
+@media (max-width: 375px) {
+	.schedule .btn-default {
+		min-width: 200px;
+		font-size: 14px;
+		padding: 12px 45px 12px 15px;
+		width: 100%;
+		max-width: 200px;
+	}
+
+	.schedule {
+		flex-direction: column !important;
+		gap: 15px !important;
 	}
 }
 

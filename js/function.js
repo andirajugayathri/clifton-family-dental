@@ -88,22 +88,25 @@
 
 	/* About client logo slider JS */
 	var swiper = new Swiper(".companies_logo_slider", {
-		slidesPerView: 6,
-		spaceBetween: 30,
+		slidesPerView: 2,
+		spaceBetween: 20,
 		loop: true,
 		speed: 1500,
 		autoplay: {
 			delay: 2000,
 		},
 		breakpoints: {
-			375: {
-				slidesPerView: 2
+			576: {
+				slidesPerView: 3,
+				spaceBetween: 25,
 			},
 			768: {
-				slidesPerView: 4	
+				slidesPerView: 4,
+				spaceBetween: 30,
 			},
 			991: {
-				slidesPerView: 6
+				slidesPerView: 6,
+				spaceBetween: 30,
 			}
 		}
 	});
