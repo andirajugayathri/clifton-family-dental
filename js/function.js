@@ -380,15 +380,24 @@
 })(jQuery);
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("navbar.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-            // Initialize navbar scripts after content is loaded
-            if (window.initNavbar) {
-                window.initNavbar();
-            }
-        });
+    const navbarContainer = document.getElementById("navbar");
+    if (navbarContainer) {
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                navbarContainer.innerHTML = data;
+                // Initialize navbar scripts after content is loaded
+                if (window.initNavbar) {
+                    window.initNavbar();
+                }
+            });
+    } else {
+        // If navbar container doesn't exist (e.g., homepage with hardcoded nav),
+        // initialize navbar scripts directly
+        if (window.initNavbar) {
+            window.initNavbar();
+        }
+    }
 
     fetch("footer.html")
         .then(response => response.text())
