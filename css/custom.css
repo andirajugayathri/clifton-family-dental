@@ -865,7 +865,7 @@ header.main-header .header-sticky.active {
 	.hero {
 		height: auto;
 		/* Allow height to grow with content if needed, or keep 600px */
-		min-height: 500px;
+		/* min-height: 500px; */
 	}
 }
 
@@ -2721,6 +2721,10 @@ footer.main-footer {
 
 .service-catagery-list ul li:hover a::after {
 	transform: translate(0px, -50%) rotate(45deg);
+}
+
+.service-catagery-list ul li.emergy a::after {
+	display: none;
 }
 
 
