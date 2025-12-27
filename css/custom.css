@@ -444,10 +444,13 @@ body {
 /************************************/
 
 header.main-header {
-	background-color: var(--secondary-color);
-	border-bottom: 1px solid var(--dark-divider-color);
-	position: relative;
-	z-index: 100;
+    background-color: transparent;
+    border-bottom: 1px solid var(--dark-divider-color);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header.main-header .header-sticky {
@@ -477,6 +480,10 @@ header.main-header .header-sticky.active {
 .navbar {
 	padding: 10px 0;
 	align-items: center;
+	background: rgba(252, 252, 252, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-brand {
@@ -503,7 +510,7 @@ header.main-header .header-sticky.active {
 	font-size: 16px;
 	font-weight: 500;
 	padding: 14px 15px !important;
-	color: var(--primary-color);
+	color: #fff;
 	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
 }
@@ -708,7 +715,7 @@ header.main-header .header-sticky.active {
 	background-position: center center;
 	background-size: cover;
 	padding: 0;
-	height: 650px;
+	height: 750px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
