@@ -5564,7 +5564,7 @@ select {
 }
 
 .main-menu ul ul li.submenu>ul.sub-menu li a:hover {
-	color: #fff;
+	color: #fff!important;
 }
 
 .main-menu ul ul li.submenu a:hover,
